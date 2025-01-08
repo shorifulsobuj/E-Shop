@@ -7,6 +7,8 @@ import ProductCard from '../../components/productCard/ProductCard'
 import Track from '../../components/track/Track'
 import Testimonial from '../../components/testimonial/Testimonial'
 import { Link } from 'react-router-dom'
+import TVPage from '../../components/tvpage/TVPage'
+import PhonePage from '../../components/phonepage/PhonePage'
 
 
 function Home() {
@@ -15,6 +17,8 @@ function Home() {
       <HeroSection />
       <Filter />
       <ProductCard />
+      <TVPage />
+      <PhonePage />
       <div className="flex justify-center -mt-10 mb-4">
         <Link to={'/allproducts'}>
           <button className=' bg-gray-300 px-5 py-2 rounded-xl'>See more</button>

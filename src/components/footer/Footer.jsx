@@ -5,6 +5,7 @@ import myContext from "../../context/data/myContext";
 export default function Footer() {
   const context = useContext(myContext);
   const { toggleMode, mode } = context;
+
   return (
     <footer
       className="text-gray-600 body-font bg-gray-300"
@@ -94,7 +95,6 @@ export default function Footer() {
               </li>
             </nav>
           </div>
-
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <h2
               className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
@@ -133,14 +133,12 @@ export default function Footer() {
       >
         <div className="container px-5 py-3 mx-auto flex items-center sm:flex-row flex-col">
           <Link to={"/"} className="flex">
-            <div className="flex ">
-              <h1
-                className=" text-2xl font-bold text-black  px-2 py-1 rounded"
-                style={{ color: mode === "dark" ? "white" : "" }}
-              >
-                E-Shop
-              </h1>
-            </div>
+            <h1
+              className="text-2xl font-bold text-black px-2 py-1 rounded"
+              style={{ color: mode === "dark" ? "white" : "" }}
+            >
+              E-Shop
+            </h1>
           </Link>
           <p
             className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4"
@@ -173,10 +171,7 @@ export default function Footer() {
                 <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
               </svg>
             </a>
-            <a
-              href="https://x.com/ShorifulSobuj_"
-              className="ml-3 text-gray-500"
-            >
+            <a href="https://x.com/ShorifulSobuj_" className="ml-3 text-gray-500">
               <svg
                 fill="currentColor"
                 strokeLinecap="round"
@@ -193,7 +188,7 @@ export default function Footer() {
               className="ml-3 text-gray-500"
             >
               <svg
-                fill="none"
+                fill="currentColor"
                 stroke="currentColor"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -202,13 +197,11 @@ export default function Footer() {
                 viewBox="0 0 24 24"
               >
                 <rect width={20} height={20} x={2} y={2} rx={5} ry={5} />
-                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01" />
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                <circle cx="17.5" cy="6.5" r="1.5" />
               </svg>
             </a>
-            <a
-              href="https://github.com/ShorifulSobuj"
-              className="ml-3 text-gray-500"
-            >
+            <a href="https://github.com/ShorifulSobuj" className="ml-3 text-gray-500">
               <svg
                 fill="currentColor"
                 stroke="currentColor"
